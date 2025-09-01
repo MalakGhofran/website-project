@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discovey schoolclub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark"onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="test.html">TEST</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+                <i class="fa-solid fa-ellipsis"onclick="showmenu()"></i>
+
+        </nav>
+       <h1>OUR TEST</h1>
+    </section>
+
+<!---------TEST QUIZ--------->
+<section class="test">
+    <h1> ماهو مجالك المميّز؟</h1>
+     <div id="quiz-area">
+        <section class="q-n-a">
+            <h4 class="question">عند العمل على مشروع، ما الشيء الذي يجذبك أكثر؟</h4>
+             <div class="answers">
+                <div class="answer" data-value="1">تحليل البيانات وحل المشكلات</div>
+                <div class="answer" data-value="2">ابتكار تصميمات جديدة أو الرسم </div>
+                <div class="answer" data-value="3"> تجربة الأدوات التقنية أو البرمجة</div>
+                <div class="answer" data-value="4">التواصل مع الآخرين والعمل كفريق</div>
+                <div class="answer" data-value="5">الجانب العملي و حل المشاكل معا</div>
+             </div>
+             <div class="button-holder clearfix">
+                <div class="next mini button">Next</div>
+             </div>
+        </section>
+
+        <section class="q-n-a">
+            <h4 class="question"> ما نوع الأنشطة التي تستمتع بها في وقت فراغك؟</h4>
+            <div class="answers">
+                <div class="answer" data-value="1"> قراءة كتب أو مقالات علمية</div>
+                <div class="answer" data-value="2">الرسم أو الحرف اليدوية</div>
+                <div class="answer" data-value="3">  اللعب على الكمبيوتر أو محاولة برمجة شيء ما</div>
+                <div class="answer" data-value="4">المشاركة في الأنشطة الاجتماعية والتطوعية  </div>
+                <div class="answer" data-value="5"> ممارسة الرياضة أو اي نشاط بدني  </div>
+            </div>
+            <div class="button-holder clearfix">
+                <div class="previous mini button">Previous</div>
+                <div class="next mini button">Next</div>
+            </div>
+        </section>
+
+        <section class="q-n-a">
+            <h4 class="question"> إذا واجهت تحديًا جديدًا، كيف تتصرف؟</h4>
+            <div class="answers">
+                <div class="answer" data-value="1">  أبحث عن معلومات وأحلله بعناية</div>
+                <div class="answer" data-value="2">أجد حلاً مبتكرًا بطريقة إبداعية</div>
+                <div class="answer" data-value="3"> أستخدم الأدوات التقنية لتجربة الحل</div>
+                <div class="answer" data-value="4">أستشير الآخرين وأعمل معهم لإيجاد الحل</div>
+                <div class="answer" data-value="5">أجرب حلاً عمليًا فورًا وأتعلم من التجربة </div>
+            </div>
+            <div class="button-holder clearfix">
+                <div class="previous mini button">Previous</div>
+                <div class="next mini button">Next</div>
+            </div>
+        </section>
+
+        <section class="q-n-a">
+            <h4 class="question"> ما نوع المواد الدراسية التي تفضلها أكثر؟</h4>
+            <div class="answers">
+                <div class="answer" data-value="1"> الرياضيات أو العلوم</div>
+                <div class="answer" data-value="2">الرسم أو الموسيقى  </div>
+                <div class="answer" data-value="3">المعلوماتية أو التكنولوجيا</div>
+                <div class="answer" data-value="4">الأدب أو علم الاجتماع</div>
+                <div class="answer" data-value="5"> التربية البدنية</div>
+            </div>
+            <div class="button-holder clearfix">
+                <div class="previous mini button">Previous</div>
+                <div class="next mini button">Next</div>
+            </div>
+        </section>
+
+        <section class="q-n-a">
+            <h4 class="question"> إذا طُلب منك قيادة مجموعة، ما أسلوبك؟</h4>
+            <div class="answers">
+                <div class="answer" data-value="1">  أستخدم التفكير المنطقي لاتخاذ قرارات مدروسة</div>
+                <div class="answer" data-value="2">أقدم أفكارًا إبداعية تجعل العمل ممتعاً</div>
+                <div class="answer" data-value="3">  أعتمد على التكنولوجيا لتسهيل العمل</div>
+                <div class="answer" data-value="4"> أشجع الجميع وأستمع إلى آرائهم </div>
+                <div class="answer" data-value="5">أوجه الفريق للعمل بسرعة وكفاءة </div>
+             </div>
+            <div class="button-holder clearfix">
+            <div class="previous mini button">Previous</div><div class="next mini button">Next</div>
+            </div>
+        </section>
+
+        <section class="q-n-a">
+            <h4 class="question"> ما هو حلمك المهني؟</h4>
+            <div class="answers">
+                <div class="answer" data-value="1">أن أصبح عالمًا أو باحثا </div>
+                <div class="answer" data-value="2">الرسم أو الحرف اليدوية</div>
+                <div class="answer" data-value="3">أن أصبح فنانًا أو مصممًا</div>
+                <div class="answer" data-value="4">أن أصبح قائدًا اجتماعيًا أو مستشارًا</div>
+                <div class="answer" data-value="5"> أن أصبح رياضيًا محترفًا أو مدربًا</div>
+            </div>
+            <div class="button-holder clearfix">
+            <div class="previous mini button">Previous</div>
+            <div class="next mini button">Next</div>
+            </div>
+        </section>
+
+     </div>
+    <button type="button" class="hero-btn red-btn"> اكتشف مجالك المميّز</button>
+    <div class="response" style="display: none;"><p></p></div>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+<!----footer----->
+<section class="footer">
+    <h3> About Us --عن نادينا</h3>
+    <p>نحن نادي مدرسي يحفّز البحث عن الذّات، من طلاّب الى طلاّب  نجرب و نبحث في مختلف المجالات لنكتشف ذاتنا و مواهبنا<br> لأننا نؤمن ان كل واحد مناّ خلق لغاية</p>
+     <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-brands fa-facebook"></i>
+
+     </div>
+
+</section>
+
+
+
+<!-----jquery!------>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+crossorigin="anonymous"></script>
+<!-----any jQ plugins go here-->
+<script type="text/javascript">
+    var question = $('.question').length ;//stores the number of question we have
+    var total = 0 ;// the sum of answers the user selected
+    var avg = 0;//the المتوسط of the answers the user selected
+
+        $( '.answer' ).on( 'click', function () {
+            if($(this).parent().find('.selected').length > 0){
+                total -=  $( this ).parent().find( '.selected' ).data('value');
+                $(this).parent().find('.selected').removeClass('selected')
+            }
+
+            $( this ).addClass( 'selected' );
+            total += Number($( this ).data( 'value' ));
+            console.log( total );
+        })
+
+
+
+    $('.hero-btn').on('click',function(){
+        avg = total / question;
+        var message ='';
+        if ($('.selected').length === question){
+            //an answer for every question
+                if ( avg < 2.5 )
+            {
+                message = 'أنت مميز في المجالات العلمية والتحليلية';
+            } else if ( avg < 3.5 )
+            {
+                message = ' تمتلك حسًا فنيًا وإبداعيًا';
+            } else if ( avg < 4.5 )
+            {
+                message = 'شغفك بالتقنية والتكنولوجيا يميزك';
+            } else if ( avg < 5.5 )
+            {
+                message = 'لديك قدرة على التواصل والعمل مع الآخرين';
+            } else {
+                message = 'تحب الحركة والعمل الميداني وتتميز بالنشاط';
+            }
+            $( '#quiz-area, button' ).hide();
+
+        }else{
+            message = 'you missed at least one question';
+        }
+          $('.response p').text(message)
+          $('.response').show();
+
+        alert(message);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------JavaScript for toggle menu------>
+
+    <script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+     function hidemenu (){
+          navlinks.style.right = "-200px";
+    }
+    </script>
+
+
+
+</body>
+</html>
