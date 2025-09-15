@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discovey schoolclub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark"onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="test.html">TEST</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+                <i class="fa-solid fa-ellipsis"onclick="showmenu()"></i>
+
+        </nav>
+       <h1>About Us</h1>
+    </section>
+
+<!---------about us content--------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h3>We are the discovery schoolclub -- نادي استكشف  مجالك</h3>
+            <p>يهدف هذا النادي الى مساعدة الطلاب على اكتشاف اهتماماتهم و مواهبهم من خلال تجربة متنوعة للمجالات العلمية ؛ الفنّية
+              ،التّقنية و المهنية مما يساهم في توجيههم نحو التخصصات التي تتناسب مع قدراتهم و طموحاتهم المستقبليةحيث نجرب معاً مجالات مختلفة كل اسبوع  بعد اختبار بسيط نجريه  عند التحاقك بنا  لأخذ نظرة اولية عن شخصيتك و تقليص الاحتمالات العديدة لأجل وصول اسرع لإهتمامك و بدقة اكبر</p>
+            <a href="test.html" class="hero-btn red-btn" >EXPLORE NOW</a>
+         </div>
+        <div class="about-col">
+            <img src="images/lost.jpg" height="400">
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!----footer----->
+<section class="footer">
+    <h3> About Us --عن نادينا</h3>
+    <p>نحن نادي مدرسي يحفّز البحث عن الذّات، من، طلاّب الى طلاّب  نجرب و نبحث في مختلف المجالات لنكتشف ذاتنا و مواهبنا<br> لأننا نؤمن ان كل واحد مناّ خلق لغاية</p>
+     <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-brands fa-facebook"></i>
+
+     </div>
+    <p>made with <i class="fa fa-heart"></i> by Amrouche Malak Ghofran</p>
+
+</section>
+
+
+
+
+
+    <!------JavaScript for toggle menu------>
+
+    <script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+     function hidemenu (){
+          navlinks.style.right = "-200px";
+    }
+    </script>
+
+
+
+</body>
+</html>
